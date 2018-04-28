@@ -2,7 +2,6 @@ import sys
 import os
 
 
-
 class Farm_animal:
     __id = 0
     __weight = 0
@@ -34,52 +33,37 @@ class Farm_animal:
         return self.__date_of_birth
 
     def toString(self):
-        return "ID krave je {} , tezina joj je {} kg, rodjena {}".format(self.__id,
+        return "Cow with ID {} , which weighs {} kg, born {}".format(self.__id,
                                                                        self.__weight,
                                                                        self.__date_of_birth)
         
-farma_zivotinja = []
+farm = []
 count = 0
 
-#krava
-krava = Farm_animal(0,300,07210015)
-farma_zivotinja.append(krava)
+cow1 = Farm_animal(0,300,07210015)
+farm.append(cow1)
 count = count + 1
-for x in farma_zivotinja:
+for x in farm:
     print x.toString()    
-print "Trenutno na farmi ima {} krava/e".format(count)
+print "We have currently {} caw/s on farm".format(count)
     
-
-#krava1
-krava1 = Farm_animal(1,400,11222016)
-farma_zivotinja.append(krava1)
+cow2 = Farm_animal(1,400,11222016)
+farm.append(cow2)
 count = count + 1
-for x in farma_zivotinja:
+for x in farm:
     print x.toString()    
-print "Trenutno na farmi ima {} krava/e".format(count)
+print "We have currently {} caw/s on farm".format(count)
 
-    
-#krava2
-krava2 = Farm_animal(2,350,12225015)
-farma_zivotinja.append(krava2)
+cow3 = Farm_animal(2,350,12225015)
+farm.append(cow3)
 count = count + 1
-for x in farma_zivotinja:
+for x in farm:
     print x.toString()    
-print "Trenutno na farmi ima {} krava/e".format(count)
+print "We have currently {} caw/s on farm".format(count)
 
-#krava3
-krava3 = Farm_animal(3,100,236598)
+cow4 = Farm_animal(3,100,236598)
 count = count + 1
-farma_zivotinja.append(krava3)
-for x in farma_zivotinja:
+farm.append(cow4)
+for x in farm:
     print x.toString()
 print "Trenutno na farmi ima {} krava/e".format(count)
-    
-
-
-
-#farma_zivotinja[0].toString()
-
-
-
-
